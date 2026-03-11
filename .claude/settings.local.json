@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(find C:\\\\Users\\\\BenjaminB\\\\OneDrive - AXE EXPERTISE ASSOCIES\\\\Bureau\\\\Site AXE EXPERTISE:*)"
+    ]
+  }
+}

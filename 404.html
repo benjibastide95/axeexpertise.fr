@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Non Trouvee | AXE Expertise & Associes</title>
+    <meta name="description" content="La page que vous recherchez n'existe pas ou a ete deplacee.">
+    <meta name="robots" content="noindex">
+
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- PAGE TRANSITION -->
+    <div class="page-transition" id="pageTransition"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Navigation principale">
+        <a href="index.html" class="nav-brand">
+            <img src="assets/img/logo-axe.png" alt="Logo AXE Expertise & Associes - Cabinet d'expertise comptable Paris" class="nav-logo"> <span class="nav-brand-text">AXE EXPERTISE</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="pages/services.html">Nos Services</a></li>
+            <li><a href="pages/equipe.html">Notre Equipe</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/espace-client.html" class="nav-btn">Espace Client</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+
+    <section class="page-404-body">
+        <div class="error-code">404</div>
+        <h1>Page Non Trouvee</h1>
+        <p>Desolee, la page que vous recherchez n'existe pas ou a ete deplacee.</p>
+        <div>
+            <a href="index.html" class="inline-cta">
+                Retour a l'accueil
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+            <a href="pages/rdv.html" class="inline-cta" style="background:var(--navy);margin-left:12px;">
+                Nous contacter
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>AXE EXPERTISE & ASSOCIES</h4>
+                <p>
+                    Cabinet d'expertise comptable inscrit a l'Ordre des Experts-Comptables de Paris Ile-de-France.<br>
+                    Votre partenaire de confiance pour la gestion comptable, sociale et juridique.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>NOS SERVICES</h4>
+                <a href="pages/comptabilite.html">Expertise Comptable</a>
+                <a href="pages/social.html">Conseil Social & Paie</a>
+                <a href="pages/juridique.html">Domaines Juridiques</a>
+                <a href="pages/creation-entreprise.html">Creation d'Entreprise</a>
+                <a href="pages/simulation.html">Simulateur d'Honoraires</a>
+            </div>
+            <div class="footer-col">
+                <h4>NOUS CONTACTER</h4>
+                <div class="footer-contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Paris, Ile-de-France
+                </div>
+                <div class="footer-contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    01 23 45 67 89
+                </div>
+                <div class="footer-contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    contact@axe-expertise.fr
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="pages/mentions.html">Mentions Legales</a>
+                <span class="footer-divider">|</span>
+                <a href="pages/confidentialite.html">Politique de Confidentialite</a>
+                <span class="footer-divider">|</span>
+                <span>&copy; 2025 AXE Expertise & Associes — Tous droits reserves</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
