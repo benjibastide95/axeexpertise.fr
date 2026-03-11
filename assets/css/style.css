@@ -148,10 +148,9 @@ h1, h2, h3, h4 {
   width: auto;
   object-fit: contain;
   border-radius: 50%;
-  background: var(--navy);
-  padding: 4px;
+  background: transparent;
+  padding: 0;
   transition: transform 0.4s var(--ease-out-expo);
-  box-shadow: 0 2px 8px rgba(10, 22, 40, 0.2);
 }
 
 .nav-brand:hover .nav-logo { transform: scale(1.06); }
@@ -347,8 +346,8 @@ h1, h2, h3, h4 {
 }
 
 .hero-ring--3::before {
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  background: rgba(10, 22, 40, 0.25);
+  box-shadow: 0 0 12px rgba(10, 22, 40, 0.1);
   width: 10px; height: 10px; top: -5px;
 }
 
@@ -390,9 +389,9 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--navy);
+  background: var(--bg-white);
   border-radius: 50%;
-  box-shadow: 0 8px 40px rgba(10, 22, 40, 0.25);
+  box-shadow: 0 8px 40px rgba(10, 22, 40, 0.1);
   border: 3px solid rgba(232, 96, 28, 0.3);
 }
 
@@ -401,7 +400,7 @@ h1, h2, h3, h4 {
   height: 120px;
   object-fit: contain;
   border-radius: 50%;
-  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
 }
 
 /* Hero text */
@@ -860,9 +859,10 @@ h1, h2, h3, h4 {
    FOOTER
    ============================================ */
 .footer {
-  background: var(--bg-darker);
-  color: var(--text-white);
+  background: var(--bg-light);
+  color: var(--text-main);
   padding: 80px 60px 30px;
+  border-top: 1px solid var(--border-light);
 }
 
 .footer-content {
@@ -874,17 +874,17 @@ h1, h2, h3, h4 {
 }
 
 .footer-col h4 {
-  color: var(--text-white);
+  color: var(--navy);
   font-size: 1.02rem;
   margin-bottom: 22px;
   letter-spacing: 0.03em;
 }
 
-.footer-col p { color: #94a3b8; line-height: 1.8; font-size: 0.9rem; }
+.footer-col p { color: var(--text-light); line-height: 1.8; font-size: 0.9rem; }
 
 .footer-col a {
   display: block;
-  color: #94a3b8;
+  color: var(--text-light);
   margin-bottom: 12px;
   font-size: 0.9rem;
   transition: all 0.3s var(--ease-out-quint);
@@ -897,15 +897,15 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 12px;
   margin-bottom: 16px;
-  color: #94a3b8;
+  color: var(--text-light);
   font-size: 0.9rem;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--border-light);
   padding-top: 28px;
   text-align: center;
-  color: #64748b;
+  color: var(--text-light);
   font-size: 0.85rem;
 }
 
@@ -917,9 +917,9 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
 }
 
-.footer-links a { color: #94a3b8; transition: color 0.3s; }
+.footer-links a { color: var(--text-light); transition: color 0.3s; }
 .footer-links a:hover { color: var(--orange); }
-.footer-divider { color: rgba(255, 255, 255, 0.15); }
+.footer-divider { color: var(--border-medium); }
 
 /* ============================================
    SCROLL REVEAL ANIMATIONS
@@ -1572,7 +1572,7 @@ select:focus-visible {
    ============================================ */
 .trust-bar {
   padding: 60px;
-  background: var(--navy);
+  background: var(--bg-light);
   position: relative;
   overflow: hidden;
 }
@@ -1611,7 +1611,7 @@ select:focus-visible {
 
 .trust-label {
   font-size: 0.92rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-light);
   font-weight: 500;
 }
 
@@ -1795,8 +1795,8 @@ select:focus-visible {
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--navy);
-  color: var(--text-white);
+  background: var(--bg-white);
+  color: var(--text-main);
   padding: 18px 30px;
   display: flex;
   align-items: center;
@@ -1805,7 +1805,8 @@ select:focus-visible {
   z-index: 9998;
   transform: translateY(100%);
   transition: transform 0.5s var(--ease-out-expo);
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  border-top: 1px solid var(--border-light);
 }
 
 .cookie-banner.visible {
@@ -1815,7 +1816,7 @@ select:focus-visible {
 .cookie-banner p {
   font-size: 0.88rem;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--text-light);
   margin: 0;
 }
 
@@ -1852,13 +1853,13 @@ select:focus-visible {
 
 .cookie-btn--decline {
   background: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-light);
+  border: 1px solid var(--border-medium);
 }
 
 .cookie-btn--decline:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--text-white);
+  background: var(--bg-light);
+  color: var(--text-main);
 }
 
 /* ============================================
@@ -1955,7 +1956,8 @@ select:focus-visible {
 .sim-result {
   max-width: 700px;
   margin: 30px auto 0;
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  background: var(--bg-light);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius-xl);
   padding: 36px 40px;
   text-align: center;
@@ -1965,7 +1967,7 @@ select:focus-visible {
 .sim-result.visible { display: block; animation: panelSlideIn 0.5s var(--ease-out-expo) forwards; }
 
 .sim-result h3 {
-  color: var(--text-white);
+  color: var(--navy);
   font-size: 1.1rem;
   margin-bottom: 8px;
 }
@@ -1979,14 +1981,14 @@ select:focus-visible {
 }
 
 .sim-price-label {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-light);
   font-size: 0.85rem;
 }
 
 .sim-note {
   margin-top: 16px;
   font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-light);
 }
 
 /* ============================================
