@@ -2,9 +2,9 @@
    AXE EXPERTISE - BLUE NAVY & ORANGE THEME
    ============================================ */
 :root {
-  --navy: #0a1628;
-  --navy-mid: #0f1f3d;
-  --navy-light: #142d54;
+  --navy: #1e3a5f;
+  --navy-mid: #24527a;
+  --navy-light: #2a6496;
   --orange: #e8601c;
   --orange-hover: #cf5518;
   --orange-glow: rgba(232, 96, 28, 0.15);
@@ -13,18 +13,18 @@
   --blue-light: #7eb3ff;
 
   --bg-white: #ffffff;
-  --bg-light: #f4f6fa;
-  --bg-dark: #0a1628;
-  --bg-darker: #060d1a;
+  --bg-light: #f0f5ff;
+  --bg-dark: #1e3a5f;
+  --bg-darker: #142d54;
 
   --text-main: #334155;
   --text-light: #64748b;
   --text-white: #ffffff;
-  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-muted: rgba(255, 255, 255, 0.75);
 
   --border-light: #e2e8f0;
   --border-medium: #cbd5e1;
-  --border-dark: rgba(255, 255, 255, 0.08);
+  --border-dark: rgba(255, 255, 255, 0.12);
 
   --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Open Sans', sans-serif;
@@ -43,9 +43,9 @@
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
 
   /* Legacy aliases for compatibility */
-  --primary: #0a1628;
-  --primary-light: #142d54;
-  --secondary: #1e293b;
+  --primary: #1e3a5f;
+  --primary-light: #2a6496;
+  --secondary: #2d3f5a;
   --accent: #e8601c;
   --accent-hover: #cf5518;
   --accent-glow: rgba(232, 96, 28, 0.15);
