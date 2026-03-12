@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Test Claude — AXE Expertise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+          *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+          body {
+                  font-family: 'Montserrat', sans-serif;
+                  background: #0a0f1e;
+                  color: #fff;
+                  min-height: 100vh;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                  padding: 40px 20px;
+          }
+          .badge {
+                  background: linear-gradient(135deg, #f97316, #ea580c);
+                  color: #fff;
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  letter-spacing: 0.15em;
+                  text-transform: uppercase;
+                  padding: 6px 18px;
+                  border-radius: 999px;
+                  margin-bottom: 32px;
+                  display: inline-block;
+          }
+          .checkmark {
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 50%;
+                  background: linear-gradient(135deg, #10b981, #059669);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 40px;
+                  box-shadow: 0 0 60px rgba(16,185,129,0.4);
+                  animation: pulse 2s ease-in-out infinite;
+          }
+          @keyframes pulse {
+                  0%, 100% { box-shadow: 0 0 40px rgba(16,185,129,0.4); }
+                  50% { box-shadow: 0 0 80px rgba(16,185,129,0.7); }
+          }
+          .checkmark svg { width: 50px; height: 50px; }
+          h1 {
+                  font-size: clamp(2.5rem, 6vw, 4.5rem);
+                  font-weight: 900;
+                  letter-spacing: -0.02em;
+                  line-height: 1.1;
+                  margin-bottom: 24px;
+                  background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+          }
+          .highlight { -webkit-text-fill-color: #f97316; }
+          p {
+                  font-size: 1.15rem;
+                  color: #94a3b8;
+                  max-width: 500px;
+                  line-height: 1.7;
+                  margin-bottom: 48px;
+          }
+          .info-grid {
+                  display: flex;
+                  gap: 24px;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  margin-bottom: 48px;
+          }
+          .info-card {
+                  background: rgba(255,255,255,0.05);
+                  border: 1px solid rgba(255,255,255,0.1);
+                  border-radius: 16px;
+                  padding: 20px 28px;
+                  min-width: 160px;
+          }
+          .info-card .value {
+                  font-size: 1.5rem;
+                  font-weight: 800;
+                  color: #f97316;
+                  margin-bottom: 4px;
+          }
+          .info-card .label {
+                  font-size: 0.8rem;
+                  color: #64748b;
+                  text-transform: uppercase;
+                  letter-spacing: 0.1em;
+          }
+          .btn-back {
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 8px;
+                  background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
+                  color: #fff;
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 0.95rem;
+                  font-weight: 600;
+                  padding: 14px 32px;
+                  border-radius: 999px;
+                  text-decoration: none;
+                  transition: transform 0.2s, box-shadow 0.2s;
+                  border: none;
+                  cursor: pointer;
+          }
+          .btn-back:hover {
+                  transform: translateY(-2px);
+                  box-shadow: 0 8px 30px rgba(29,78,216,0.5);
+          }
+          .footer-note {
+                  margin-top: 60px;
+                  font-size: 0.75rem;
+                  color: #334155;
+          }
+        </style>
+  </head>
+  <body>
+      <div class="badge">✓ Déploiement automatique</div>div>
+
+      <div class="checkmark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+            </svg>svg>
+      </div>div>
+
+      <h1>Ça <span class="highlight">marche</span>span> !</h1>
+  
+    <p>
+          Cette page a été créée par <strong style="color:#fff;">Claude</strong>strong> directement depuis GitHub.
+          Le déploiement vers Hostinger s'est fait automatiquement en quelques secondes.
+    </p>
+
+      <div class="info-grid">
+            <div class="info-card">
+                    <div class="value">GitHub</div>div>
+                    <div class="label">Source du code</div>div>
+            </div>div>
+            <div class="info-card">
+                    <div class="value">Auto</div>div>
+                    <div class="label">Déploiement</div>div>
+            </div>div>
+            <div class="info-card">
+                    <div class="value">FTP</div>div>
+                    <div class="label">Méthode</div>div>
+            </div>div>
+      </div>div>
+
+      <a href="index.html" class="btn-back">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>svg>
+            Retour au site
+      </a>a>
+
+      <div class="footer-note">AXE Expertise — Pipeline Claude × GitHub × Hostinger</div>div>
+  </body>
+</html>html>
+    </p></h1>
+  </body>
+    </style></title>
+  </head>
