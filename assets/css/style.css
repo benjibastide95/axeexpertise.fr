@@ -148,10 +148,11 @@ h1, h2, h3, h4 {
   width: auto;
   object-fit: contain;
   border-radius: 50%;
-  background: var(--navy);
+  background: var(--bg-white);
   padding: 4px;
   transition: transform 0.4s var(--ease-out-expo);
-  box-shadow: 0 2px 8px rgba(10, 22, 40, 0.2);
+  box-shadow: 0 2px 8px rgba(10, 22, 40, 0.12);
+  border: 2px solid var(--border-light);
 }
 
 .nav-brand:hover .nav-logo { transform: scale(1.06); }
@@ -347,8 +348,8 @@ h1, h2, h3, h4 {
 }
 
 .hero-ring--3::before {
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  background: rgba(10, 22, 40, 0.5);
+  box-shadow: 0 0 12px rgba(10, 22, 40, 0.2);
   width: 10px; height: 10px; top: -5px;
 }
 
@@ -390,10 +391,10 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--navy);
+  background: var(--bg-white);
   border-radius: 50%;
-  box-shadow: 0 8px 40px rgba(10, 22, 40, 0.25);
-  border: 3px solid rgba(232, 96, 28, 0.3);
+  box-shadow: 0 8px 40px rgba(10, 22, 40, 0.12), 0 2px 12px rgba(10, 22, 40, 0.08);
+  border: 3px solid rgba(232, 96, 28, 0.25);
 }
 
 .hero-center-logo img {
@@ -401,7 +402,7 @@ h1, h2, h3, h4 {
   height: 120px;
   object-fit: contain;
   border-radius: 50%;
-  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 2px 8px rgba(10, 22, 40, 0.15));
 }
 
 /* Hero text */
