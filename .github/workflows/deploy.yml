@@ -2,28 +2,34 @@ name: Deploy to OVH via FTP
 
 on:
   push:
-      branches:
-            - master
+    branches:
+      - master
+  pull_request:
+    types:
+      - closed
+    branches:
+      - master
 
-            jobs:
-              deploy:
-                  runs-on: ubuntu-latest
-                      steps:
-                            - name: Checkout repository
-                                    uses: actions/checkout@v4
+jobs:
+  deploy:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-                                          - name: Deploy via FTP
-                                                  uses: SamKirkland/FTP-Deploy-Action@v4
-                                                          with:
-                                                                    server: ${{ secrets.FTP_SERVER }}
-                                                                              username: ${{ secrets.FTP_USERNAME }}
-                                                                                        password: ${{ secrets.FTP_PASSWORD }}
-                                                                                                  local-dir: ./
-                                                                                                            server-dir: /home/axeexpk/www/
-                                                                                                                      exclude: |
-                                                                                                                                  **/.git*
-                                                                                                                                              **/.git*/**
-                                                                                                                                                          **/node_modules/**
-                                                                                                                                                                      .github/**
-                                                                                                                                                                                  .claude/**
-                                                                                                                                                                                              CLAUDE.md
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: /home/axeexpk/www/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .github/**
+            .claude/**
+            CLAUDE.md
