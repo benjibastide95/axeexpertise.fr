@@ -1,0 +1,15 @@
+# Protection du dossier API — AXE Expertise
+# Empecher l'acces direct aux fichiers de configuration
+
+<Files "config.php">
+    Require all denied
+</Files>
+
+<Files "ms-graph.php">
+    Require all denied
+</Files>
+
+# Forcer le type de contenu JSON pour les API
+<FilesMatch "\.(php)$">
+    Header set X-Content-Type-Options "nosniff"
+</FilesMatch>
